@@ -1,0 +1,25 @@
+﻿@model BankTr.ViewModels.FindTranViewModel
+@{
+    ViewBag.Title = "FindTr";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Find Transactions</h2>
+
+@using (Html.BeginForm("FindResult", "Trans"))
+{
+<div class="form-group">
+    @Html.LabelFor(m => m.MinAmount, "Minimum Amount")
+    @Html.TextBoxFor(m => m.MinAmount, new { @class = "form-control" })
+</div>
+<div class="form-group">
+    @Html.LabelFor(m => m.MaxAmount, "Maximum Amount")
+    @Html.TextBoxFor(m => m.MaxAmount, new { @class = "form-control" })
+</div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Tran.StateId)
+        @Html.DropDownListFor(m => m.Tran.StateId, new SelectList(Model.States, "Id", "Name"), "Select State", new { @class = "form-control" })
+            
+    </div>
+    <button type="submit" class="btn btn-primary">Find</button>
+}

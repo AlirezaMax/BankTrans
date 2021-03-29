@@ -1,0 +1,22 @@
+2021-03-14 10:33:03.3874|INFO|BankTr.Controllers.TransController|15|Hello world|
+2021-03-14 10:33:03.4043|ERROR|BankTr.Controllers.TransController|15|Goodbye cruel world|System.ApplicationException: Error in the application.
+   at BankTr.Controllers.TransController.FindTrById() in C:\C-proj\BankTr\Controllers\TransController.cs:line 109
+2021-03-14 10:34:29.8240|INFO|BankTr.Controllers.HomeController|112|Hello world|
+2021-03-14 10:34:29.8240|ERROR|BankTr.Controllers.HomeController|112|Goodbye cruel world|System.ApplicationException: Error in the application.
+   at BankTr.Controllers.HomeController.About() in C:\C-proj\BankTr\Controllers\HomeController.cs:line 25
+2021-03-14 12:18:45.6715|INFO|BankTr.Controllers.LogController|10|Hello world -LogController|
+2021-03-14 12:18:45.7093|ERROR|BankTr.Controllers.LogController|10|Goodbye cruel world -LogController|System.ApplicationException: Error in the application.
+   at BankTr.Controllers.LogController.Index() in C:\C-proj\BankTr\Controllers\LogController.cs:line 44
+2021-03-14 14:55:38.4750|ERROR|BankTr.Controllers.TransController|11|Error in ActionResult Delete|System.ApplicationException: Error in the application.
+   at BankTr.Controllers.TransController.Delete(Tran tran) in C:\C-proj\BankTr\Controllers\TransController.cs:line 76
+2021-03-14 15:01:35.6973|ERROR|BankTr.Controllers.TransController|43|Error in ActionResult Delete|System.ApplicationException: Error in the application.
+   at BankTr.Controllers.TransController.Delete(Tran tran) in C:\C-proj\BankTr\Controllers\TransController.cs:line 76
+2021-03-29 18:07:30.2687|INFO|BankTr.Controllers.TransController|10|Test Logger.Info in ActionResult FindTrById|
+2021-03-29 18:07:30.3074|ERROR|BankTr.Controllers.TransController|10|Test Logger.Error in ActionResult FindTrById|System.ApplicationException: Error in the application.
+   at BankTr.Controllers.TransController.FindTrById() in C:\C-proj\BankTr\Controllers\TransController.cs:line 104
+2021-03-29 19:17:27.3469|INFO|BankTr.Controllers.TransController|37|Test Logger.Info in ActionResult FindTrById|
+2021-03-29 19:17:27.3638|ERROR|BankTr.Controllers.TransController|37|Test Logger.Error in ActionResult FindTrById|System.ApplicationException: Error in the application.
+   at BankTr.Controllers.TransController.FindTrById() in C:\C-proj\BankTr\Controllers\TransController.cs:line 114
+2021-03-29 23:07:56.3776|INFO|BankTr.Controllers.TransController|7|Test Logger.Info in ActionResult FindTrById|
+2021-03-29 23:07:56.4428|ERROR|BankTr.Controllers.TransController|7|Test Logger.Error in ActionResult FindTrById|System.ApplicationException: Error in the application.
+   at BankTr.Controllers.TransController.FindTrById() in C:\C-proj\BankTr\Controllers\TransController.cs:line 114

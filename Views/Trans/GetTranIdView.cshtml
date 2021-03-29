@@ -1,0 +1,18 @@
+﻿@model BankTr.Core.Domain.Tran
+@{
+    ViewBag.Title = "GetTranIdView";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Enter Tran Id</h2>
+
+@using (Html.BeginForm("Delete", "Trans"))
+{
+    <div class="form-group">
+        @Html.LabelFor(m => m.Id, "Tran Id")
+        @Html.TextBoxFor(m => m.Id, new { @class = "form-control" })
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Click to Delete</button>
+}
+

@@ -1,0 +1,24 @@
+﻿@model BankTr.Core.Domain.Tran
+@{
+    ViewBag.Title = "OneTranView";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>OneTranView</h2>
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>State</th>
+            <th>Amount($)</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>@Model.StateId</td>
+
+            <td>@Model.Amount</td>
+        </tr>
+        
+    </tbody>
+</table>

@@ -1,0 +1,33 @@
+﻿@model IEnumerable<BankTr.Core.Domain.Tran>
+
+@{
+    ViewBag.Title = "Transactions TrList";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Transactions</h2>
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>State</th>
+            <th>Amount($)</th>
+            <th>Transaction No</th>
+            <th>Customer Name</th>
+            <th>Customer Id</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var tran in Model)
+        {
+        <tr>
+            <td>@tran.State.Code</td>
+            <td>@tran.Amount</td>
+            <td>@tran.Id</td>
+            <td>@tran.Customer.Name</td>
+            <td>@tran.CustomerId</td>
+
+        </tr>
+        }
+    </tbody>
+</table>
+
